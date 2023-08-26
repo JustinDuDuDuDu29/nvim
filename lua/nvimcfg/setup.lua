@@ -24,8 +24,8 @@ vim.opt.isfname:append("@-@")
 
 
 vim.g.netrw_altv = 1
-vim.cmd [[colorscheme tokyonight]]
-
+-- vim.cmd [[colorscheme tokyonight]]
+vim.cmd("colorscheme duskfox")
 -- vim.cmd.highlight('DiagnosticUnderlineError guisp=#ff0000 gui=undercurl')
 
 vim.api.nvim_create_autocmd("BufWritePre", { command = "lua vim.lsp.buf.format()" })
@@ -65,7 +65,8 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
 
 
 
---
 vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError',
-    { fg = "#ff0000", bg = "#4B252C", underline = false, undercurl = true, italic = true, bold = true })
---
+    { fg = "#ff0000", bg = "#4B252C", underline = true, undercurl = true, italic = true, bold = true })
+
+vim.api.nvim_set_hl(0, 'DiagnosticUnderlineInfo',
+    { fg = "#3082ff", bg = "#a4cbff" })
