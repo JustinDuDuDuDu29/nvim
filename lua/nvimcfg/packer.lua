@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
     use 'nvim-lua/plenary.nvim'
     use 'ThePrimeagen/harpoon'
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        'nvim-telescope/telescope.nvim', tag = '0.1.5',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
     use {
@@ -87,9 +87,9 @@ return require('packer').startup(function(use)
     }
     use "lukas-reineke/indent-blankline.nvim"
     use 'nvim-tree/nvim-web-devicons'
-    use {
-        'chikko80/error-lens.nvim',
-        requires = { 'nvim-telescope/telescope.nvim' }
-    }
+    -- use {
+    --     'chikko80/error-lens.nvim',
+    --     requires = { 'nvim-telescope/telescope.nvim' }
+    -- }
     use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
 end)
