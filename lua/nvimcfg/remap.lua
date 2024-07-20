@@ -13,7 +13,7 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>f", ":lua vim.lsp.buf.format()<cr>")
 
 
-vim.keymap.set("n", "<leader><PageUp>", ':exe "vertical resize " . (winwidth(0) * 6/5) <cr>')
-vim.keymap.set("n", "<leader><PageDown>", ':exe "vertical resize " . (winwidth(0) * 5/6) <cr>')
+vim.keymap.set("n", "<leader><Left>", ':exe "vertical resize " . (winwidth(0) * 6/5) <cr>')
+vim.keymap.set("n", "<leader><Right>", ':exe "vertical resize " . (winwidth(0) * 5/6) <cr>')
 vim.keymap.set("n", "<leader>pr", ':vertical resize 110 <cr>')
 -- vim.keymap.set("n", "<leader>mr", ':vertical resize 144 <cr>')
