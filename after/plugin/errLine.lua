@@ -1,3 +1,0 @@
--- require("error-lens").setup(client, {
---
--- })

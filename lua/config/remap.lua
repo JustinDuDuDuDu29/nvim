@@ -17,3 +17,5 @@ vim.keymap.set("n", "<leader><Left>", ':exe "vertical resize " . (winwidth(0) * 
 vim.keymap.set("n", "<leader><Right>", ':exe "vertical resize " . (winwidth(0) * 5/6) <cr>')
 vim.keymap.set("n", "<leader>pr", ':vertical resize 110 <cr>')
 -- vim.keymap.set("n", "<leader>mr", ':vertical resize 144 <cr>')
+
+vim.keymap.set('n', '<leader>t', vim.cmd.UndotreeToggle)

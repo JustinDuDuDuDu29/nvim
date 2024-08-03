@@ -5,23 +5,20 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
-    use 'neovim/nvim-lspconfig'
-    use "EdenEast/nightfox.nvim"
-    use { "folke/trouble.nvim" }
-    use("petertriho/nvim-scrollbar")
-    use 'nvim-lua/plenary.nvim'
-    use 'ThePrimeagen/harpoon'
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    }
+    -- use "EdenEast/nightfox.nvim"
+    -- use("petertriho/nvim-scrollbar")
+    -- use 'nvim-lua/plenary.nvim'
+    -- use 'ThePrimeagen/harpoon'
+    -- use {
+    --     'nvim-telescope/telescope.nvim', tag = '0.1.5',
+    --     requires = { { 'nvim-lua/plenary.nvim' } }
+    -- }
     use {'neoclide/coc.nvim' , branch = 'release'}
     -- use {
     --     'nvim-treesitter/nvim-treesitter',
     --     run = ':TSUpdate'
     -- }
-    use 'mbbill/undotree'
+    -- use 'mbbill/undotree'
 
     -- use {
     --     'numToStr/Comment.nvim',

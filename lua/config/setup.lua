@@ -25,7 +25,7 @@ vim.opt.isfname:append("@-@")
 
 vim.g.netrw_altv = 1
 -- vim.cmd [[colorscheme tokyonight]]
-vim.cmd("colorscheme duskfox")
+-- vim.cmd("colorscheme duskfox")
 -- vim.cmd.highlight('DiagnosticUnderlineError guisp=#ff0000 gui=undercurl')
 
 vim.api.nvim_create_autocmd("BufWritePre", { command = "lua vim.lsp.buf.format()" })
